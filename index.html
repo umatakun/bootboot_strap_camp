@@ -48,12 +48,12 @@
 </nav>
 
 <main role="main" class="container">
-    <div class="alerts block">
+    <div class="alerts border-bottom border-primary">
         <div class="alert alert-success"><strong>アラート</strong> - チェックしてください！ Success：<code>.alert-success</code></div>
         <div class="alert alert-warning"><strong>アラート</strong> - チェックしてください！ Warning：<code>.alert-warning</code></div>
         <div class="alert alert-danger"><strong>アラート</strong> - チェックしてください！ Danger：<code>.alert-danger</code></div>
     </div>
-    <div class="badges block">
+    <div class="badges border-bottom border-primary">
         <p><span class="badge badge-primary">Primary</span>　<code>.badge-primary</code></p>
         <p><span class="badge badge-secondary">Secondary</span>　<code>.badge-secondary</code> <span class="text-black-50">v4.0.0Defaultから変更</span></p>
         <p><span class="badge badge-success">Success</span>　<code>.badge-success</code></p>
@@ -63,6 +63,31 @@
         <p><span class="badge badge-light">Light</span>　<code>.badge-light</code> <span class="text-black-50">v4.0.0追加</span></p>
         <p><span class="badge badge-dark">Dark</span>　<code>.badge-dark</code> <span class="text-black-50">v4.0.0追加</span></p>
     </div>
+
+    <nav aria-label="パンくずリスト" class="border-bottom border-primary">
+        <ol class="breadcrumb mb-1">
+            <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+            <li class="breadcrumb-item"><a href="#">ライブラリ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">データ</li>
+        </ol>
+    </nav>
+
+    <form class="border-bottom border-primary">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Eメールアドレス</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Eメールアドレス">
+            <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">パスワード</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">記憶する</label>
+        </div>
+        <button type="submit" class="btn btn-primary">送信する</button>
+    </form>
 
     <div class="starter-template">
         <h1>Bootstrap starter template</h1>
@@ -74,7 +99,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>
     window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')
-</script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="./js/anchor.min.js"></script>
 <script src="./js/clipboard.min.js"></script>
 <script src="./js/bs-custom-file-input.min.js"></script>
