@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <title>Starter Template for Bootstrap · Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" integrity="sha256-yMjaV542P+q1RnH6XByCPDfUFhmOafWbeLPmqKh11zo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />    <link href="./css/starter-template.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+    </div>
+</a>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<main role="main" class="container">
+    <div class="alerts border-bottom border-primary">
+        <div class="alert alert-success"><strong>アラート</strong> - チェックしてください！ Success：<code>.alert-success</code></div>
+        <div class="alert alert-warning"><strong>アラート</strong> - チェックしてください！ Warning：<code>.alert-warning</code></div>
+        <div class="alert alert-danger"><strong>アラート</strong> - チェックしてください！ Danger：<code>.alert-danger</code></div>
+    </div>
+    <div class="badges border-bottom border-primary">
+        <p><span class="badge badge-primary">Primary</span>　<code>.badge-primary</code></p>
+        <p><span class="badge badge-secondary">Secondary</span>　<code>.badge-secondary</code> <span
+                class="text-black-50">v4.0.0Defaultから変更</span></p>
+        <p><span class="badge badge-success">Success</span>　<code>.badge-success</code></p>
+        <p><span class="badge badge-info">Info</span>　<code>.badge-info</code></p>
+        <p><span class="badge badge-warning">Warning</span>　<code>.badge-warning</code></p>
+        <p><span class="badge badge-danger">Danger</span>　<code>.badge-danger</code></p>
+        <p><span class="badge badge-light">Light</span>　<code>.badge-light</code> <span
+                class="text-black-50">v4.0.0追加</span></p>
+        <p><span class="badge badge-dark">Dark</span>　<code>.badge-dark</code> <span
+                class="text-black-50">v4.0.0追加</span></p>
+    </div>
+
+    <nav aria-label="パンくずリスト" class="border-bottom border-primary">
+        <ol class="breadcrumb mb-1">
+            <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+            <li class="breadcrumb-item"><a href="#">ライブラリ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">データ</li>
+        </ol>
+    </nav>
+
+    <form class="border-bottom border-primary">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Eメールアドレス</label>
+            <p class="text-danger">入力エラー</p>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Eメールアドレス">
+            <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">パスワード</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">記憶する</label>
+        </div>
+        <button type="submit" class="btn btn-primary">送信する</button>
+    </form>
+
+    <div class="sample">
+        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+            <div class="toast-header">
+                <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                     preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <rect fill="#007aff" width="100%" height="100%"></rect>
+                </svg>
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11分前</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="閉じる">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                こんにちは！ これはトーストのメッセージです。
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <span class="page-link">前へ</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(現位置)</span>
+      </span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">次へ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2>グリッドシステム。</h2>
+    <div class="container">
+        <div class="row bg-primary">
+            <div class="col-sm">
+                3つの列の1列目
+            </div>
+            <div class="col-sm bg-secondary">
+                3つの列の2列目
+            </div>
+            <div class="col-sm bg-success">
+                3つの列の3列目
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-primary">
+            <div class="col-sm">
+                4つの列の1列目
+            </div>
+            <div class="col-sm bg-secondary">
+                4つの列の2列目
+            </div>
+            <div class="col-sm bg-success">
+                4つの列の3列目
+            </div>
+            <div class="col-sm bg-info">
+                4つの列の4列目
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-primary">
+            <div class="col-sm">
+                5つの列の1列目
+            </div>
+            <div class="col-sm bg-secondary">
+                5つの列の2列目
+            </div>
+            <div class="col-sm bg-success">
+                5つの列の3列目
+            </div>
+            <div class="col-sm bg-info">
+                5つの列の4列目
+            </div>
+            <div class="col-sm bg-warning">
+                5つの列の5列目
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-primary">
+            <div class="col-sm bg-primary">
+                12つの列の1列目
+            </div>
+            <div class="col-sm bg-secondary">
+                12つの列の2列目
+            </div>
+            <div class="col-sm bg-info">
+                12つの列の3列目
+            </div>
+            <div class="col-sm bg-warning">
+                12つの列の4列目
+            </div>
+            <div class="col-sm bg-danger">
+                12つの列の5列目
+            </div>
+            <div class="col-sm bg-dark">
+                12つの列の6列目
+            </div>
+            <div class="col-sm bg-primary">
+                12つの列の7列目
+            </div>
+            <div class="col-sm bg-secondary">
+                12つの列の8列目
+            </div>
+            <div class="col-sm bg-info">
+                12つの列の9列目
+            </div>
+            <div class="col-sm bg-warning">
+                12つの列の10列目
+            </div>
+            <div class="col-sm bg-danger">
+                12つの列の11列目
+            </div>
+            <div class="col-sm bg-dark">
+                12つの列の12列目
+            </div>
+        </div>
+    </div>
+
+    <p>
+        レイアウトを試してみる。
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 bg-primary">
+                横幅：1/12
+            </div>
+            <div class="col-8 bg-secondary">
+                横幅：8/12
+            </div>
+            <div class="col-3 bg-info">
+                横幅：3/12
+            </div>
+        </div>
+    </div>
+
+    <p>
+        領域のサイズを変更してみる。
+    </p>
+    <div class="container" style="width: 500px">
+        <div class="row">
+            <div class="col-1 bg-primary">
+                横幅：1/12
+            </div>
+            <div class="col-8 bg-secondary">
+                横幅：8/12
+            </div>
+            <div class="col-3 bg-info">
+                横幅：3/12
+            </div>
+        </div>
+    </div>
+
+    <h2>折り畳みリストグループ。</h2>
+    <div class="card">
+        <div class="card-header" role="tab" id="collapseListGroupHeading1">
+            <h5 class="mb-0">
+                <a href="#collapseListGroup1" class="collapsed text-body d-block p-3 m-n3" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseListGroup1"> 折り畳みリストグループ </a>
+            </h5>
+        </div><!-- /.card-header -->
+        <div class="collapse" role="tabpanel" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1" aria-expanded="false">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">リスト1</a></li>
+                <li class="list-group-item">リスト2</li>
+                <li class="list-group-item">リスト3</li>
+            </ul>
+            <div class="card-footer">フッタ</div>
+        </div><!-- /.collapse -->
+    </div><!-- /.card -->
+
+    <h2>リストグループ。</h2>
+    <p>リンクでリストグループ</p>
+    <div class="list-group" style="max-width: 400px;">
+        <a href="#" class="list-group-item list-group-item-action active">アクティブ</a>
+        <a href="#" class="list-group-item list-group-item-action">ホーム</a>
+        <a href="#" class="list-group-item list-group-item-action">プロフィール</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">無効</a>
+    </div>
+
+    <p>バッジ付きリストグループ</p>
+    <ul class="list-group" style="max-width: 400px;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            リスト1
+            <span class="badge badge-primary badge-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            リスト2
+            <span class="badge badge-primary badge-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            リスト3
+            <span class="badge badge-primary badge-pill">1</span>
+        </li>
+    </ul>
+
+    <p>データ属性の使用リストグループ。</p>
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="list-home">ホーム</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">プロフィール</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">メッセージ</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">セッティング</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">ホームの文章です。...</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">プロフィールの文章です。...</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">メッセージの文章です。...</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">セッティングの文章です。...</div>
+            </div>
+        </div>
+    </div>
+
+    <p>水平方向のリストグループ。</p>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">リスト1</li>
+        <li class="list-group-item">リスト2（長め）</li>
+        <li class="list-group-item">リスト3</li>
+    </ul>
+
+    <p>幅均等の水平方向のリストグループ。</p>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item flex-fill">リスト1</li>
+        <li class="list-group-item flex-fill">リスト2（長め）</li>
+        <li class="list-group-item flex-fill">リスト3</li>
+    </ul>
+
+    <p>リストグループでカラー指定。</p>
+    <div class="list-group" style="max-width: 400px;">
+        <a href="#" class="list-group-item-primary list-group-item list-group-item-action">アクティブ</a>
+        <a href="#" class="list-group-item-secondary list-group-item list-group-item-action">ホーム</a>
+        <a href="#" class="list-group-item-success list-group-item list-group-item-action active">プロフィール</a>
+        <a href="#" class="list-group-item-info list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">無効</a>
+    </div>
+
+    <h2>モーダルを試す。</h2>
+
+    <!-- 切り替えボタンの設定 -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        ココを押すと表示
+    </button>
+
+    <!-- モーダルの設定 -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">モーダルのタイトル</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-primary">了解</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>フォームのカスタマイズ。</h2>
+
+    <form class="border-bottom border-primary">
+        <div class="form-group row">
+            <label for="exampleInputEmail1" class="col-2">Eメールアドレス</label>
+            <div class="col-5">
+                <p class="text-danger">入力エラー</p>
+                <input type="email" class="form-control" id="exampleInputEmail1_2" placeholder="Eメールアドレス">
+                <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="exampleInputPassword1" class="col-2">パスワード</label>
+            <div class="col-5">
+                <input type="password" class="form-control" id="exampleInputPassword1_2" placeholder="パスワード">
+            </div>
+        </div>
+        <div class="form-group form-check row">
+            <input type="checkbox" class="form-check-input col-2" id="exampleCheck1_2">
+            <div class="col-5">
+                <label class="form-check-label" for="exampleCheck1">記憶する</label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2"></div>
+            <div class="col-5">
+                <button type="submit" class="btn btn-primary">送信する</button>
+            </div>
+        </div>
+    </form>
+
+    <h2>フォームのカスタマイズ。日時選択。</h2>
+
+    <div class="container row">
+        <label for="exampleInputEmail1" class="col-12">開始日時を指定してください。</label>
+        <div class="input-group date col-4" id="datetimePicker1" data-target-input="nearest">
+            <input type="text" class="form-control" data-target="#datetimePicker1" placeholder="日時を選択してください。" />
+            <div class="input-group-append" data-target="#datetimePicker1" data-toggle="datetimepicker">
+                <div class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                </div>
+            </div>
+        </div>
+        <div class="input-group date col-4" id="datetimePicker2" data-target-input="nearest">
+            <input type="text" class="form-control" data-target="#datetimePicker2" placeholder="時間を選択してください。" />
+            <div class="input-group-append" data-target="#datetimePicker2" data-toggle="datetimepicker">
+                <div class="input-group-text">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main><!-- /.container -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script>
+    window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"><\/script>')
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha256-z0oKYg6xiLq3yJGsp/LsY9XykbweQlHl42jHv2XTBz4=" crossorigin="anonymous"></script>
+<script src="./js/anchor.min.js"></script>
+<script src="./js/clipboard.min.js"></script>
+<script src="./js/bs-custom-file-input.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
