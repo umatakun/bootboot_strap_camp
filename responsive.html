@@ -10,24 +10,44 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ブランド</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="ナビゲーションの切替">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">ホーム <span class="sr-only">(現位置)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">リンク1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">リンク2</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+      インライン要素を含むテキスト
+    </span>
+    </div>
 </nav>
 <main>
     <h2>グリッドのレスポンシブ動作把握</h2>
     <p>既定のサイズごとのレイアウトを試す。</p>
     <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素1</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素2</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素3</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素4</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素5</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素6</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素7</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素8</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素9</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素10</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素11</div>
-        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 col-xl-1">要素12</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素1</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素2</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素4</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素5</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素6</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素7</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素8</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素9</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素10</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素11</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">要素12</div>
     </div>
     <p>2要素で確認。</p>
     <div class="row">
