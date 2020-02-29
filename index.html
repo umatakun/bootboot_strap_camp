@@ -3,7 +3,9 @@
 <head>
     <title>Starter Template for Bootstrap · Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="./css/starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" integrity="sha256-yMjaV542P+q1RnH6XByCPDfUFhmOafWbeLPmqKh11zo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />    <link href="./css/starter-template.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -378,18 +380,18 @@
             <label for="exampleInputEmail1" class="col-2">Eメールアドレス</label>
             <div class="col-5">
                 <p class="text-danger">入力エラー</p>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Eメールアドレス">
+                <input type="email" class="form-control" id="exampleInputEmail1_2" placeholder="Eメールアドレス">
                 <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
             </div>
         </div>
         <div class="form-group row">
             <label for="exampleInputPassword1" class="col-2">パスワード</label>
             <div class="col-5">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+                <input type="password" class="form-control" id="exampleInputPassword1_2" placeholder="パスワード">
             </div>
         </div>
         <div class="form-group form-check row">
-            <input type="checkbox" class="form-check-input col-2" id="exampleCheck1">
+            <input type="checkbox" class="form-check-input col-2" id="exampleCheck1_2">
             <div class="col-5">
                 <label class="form-check-label" for="exampleCheck1">記憶する</label>
             </div>
@@ -402,6 +404,27 @@
         </div>
     </form>
 
+    <h2>フォームのカスタマイズ。日時選択。</h2>
+
+    <div class="container row">
+        <label for="exampleInputEmail1" class="col-12">開始日時を指定してください。</label>
+        <div class="input-group date col-4" id="datetimePicker1" data-target-input="nearest">
+            <input type="text" class="form-control" data-target="#datetimePicker1" placeholder="日時を選択してください。" />
+            <div class="input-group-append" data-target="#datetimePicker1" data-toggle="datetimepicker">
+                <div class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                </div>
+            </div>
+        </div>
+        <div class="input-group date col-4" id="datetimePicker2" data-target-input="nearest">
+            <input type="text" class="form-control" data-target="#datetimePicker2" placeholder="時間を選択してください。" />
+            <div class="input-group-append" data-target="#datetimePicker2" data-toggle="datetimepicker">
+                <div class="input-group-text">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main><!-- /.container -->
 
@@ -412,6 +435,10 @@
     window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"><\/script>')
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha256-z0oKYg6xiLq3yJGsp/LsY9XykbweQlHl42jHv2XTBz4=" crossorigin="anonymous"></script>
 <script src="./js/anchor.min.js"></script>
 <script src="./js/clipboard.min.js"></script>
 <script src="./js/bs-custom-file-input.min.js"></script>
