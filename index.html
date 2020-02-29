@@ -259,6 +259,7 @@
         </div>
     </div>
 
+    <h2>折り畳みリストグループ。</h2>
     <div class="card">
         <div class="card-header" role="tab" id="collapseListGroupHeading1">
             <h5 class="mb-0">
@@ -274,6 +275,73 @@
             <div class="card-footer">フッタ</div>
         </div><!-- /.collapse -->
     </div><!-- /.card -->
+
+    <h2>リストグループ。</h2>
+    <p>リンクでリストグループ</p>
+    <div class="list-group" style="max-width: 400px;">
+        <a href="#" class="list-group-item list-group-item-action active">アクティブ</a>
+        <a href="#" class="list-group-item list-group-item-action">ホーム</a>
+        <a href="#" class="list-group-item list-group-item-action">プロフィール</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">無効</a>
+    </div>
+
+    <p>バッジ付きリストグループ</p>
+    <ul class="list-group" style="max-width: 400px;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            リスト1
+            <span class="badge badge-primary badge-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            リスト2
+            <span class="badge badge-primary badge-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            リスト3
+            <span class="badge badge-primary badge-pill">1</span>
+        </li>
+    </ul>
+
+    <p>データ属性の使用リストグループ。</p>
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="list-home">ホーム</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">プロフィール</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">メッセージ</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">セッティング</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">ホームの文章です。...</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">プロフィールの文章です。...</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">メッセージの文章です。...</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">セッティングの文章です。...</div>
+            </div>
+        </div>
+    </div>
+
+    <p>水平方向のリストグループ。</p>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">リスト1</li>
+        <li class="list-group-item">リスト2（長め）</li>
+        <li class="list-group-item">リスト3</li>
+    </ul>
+
+    <p>幅均等の水平方向のリストグループ。</p>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item flex-fill">リスト1</li>
+        <li class="list-group-item flex-fill">リスト2（長め）</li>
+        <li class="list-group-item flex-fill">リスト3</li>
+    </ul>
+
+    <p>リストグループでカラー指定。</p>
+    <div class="list-group" style="max-width: 400px;">
+        <a href="#" class="list-group-item-primary list-group-item list-group-item-action">アクティブ</a>
+        <a href="#" class="list-group-item-secondary list-group-item list-group-item-action">ホーム</a>
+        <a href="#" class="list-group-item-success list-group-item list-group-item-action active">プロフィール</a>
+        <a href="#" class="list-group-item-info list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">無効</a>
+    </div>
 
 </main><!-- /.container -->
 
