@@ -2,43 +2,55 @@
 <html lang="ja">
 <head>
     <title>Starter Template for Bootstrap · Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" integrity="sha256-yMjaV542P+q1RnH6XByCPDfUFhmOafWbeLPmqKh11zo=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />    <link href="./css/starter-template.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <section class="header_sidebar float-left">
-        <button type="button" class="float-right btnSearch">
-            toggle
-        </button>
-    </section>
-    <section class="header_main float-right">
-    </section>
-</header>
-<aside class="fixed-top sidebar bg-white border-right border-primary" id="sidebar">
-    <section class="sidebar_header">
+<a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+    </div>
+</a>
 
-    </section>
-    <section class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action active">アクティブ</a>
-        <a href="#" class="list-group-item list-group-item-action child">ホーム</a>
-        <a href="#" class="list-group-item list-group-item-action">プロフィール</a>
-        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">無効</a>
-    </section>
-</aside>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<main role="main" class="main">
-    <ol class="breadcrumb mb-1">
-        <li class="breadcrumb-item"><a href="#">ホーム</a></li>
-        <li class="breadcrumb-item"><a href="#">ライブラリ</a></li>
-        <li class="breadcrumb-item active" aria-current="page">データ</li>
-    </ol>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
 
-    <section class="main_container">
+<main role="main" class="container">
     <div class="alerts border-bottom border-primary">
         <div class="alert alert-success"><strong>アラート</strong> - チェックしてください！ Success：<code>.alert-success</code></div>
         <div class="alert alert-warning"><strong>アラート</strong> - チェックしてください！ Warning：<code>.alert-warning</code></div>
@@ -57,6 +69,14 @@
         <p><span class="badge badge-dark">Dark</span>　<code>.badge-dark</code> <span
                 class="text-black-50">v4.0.0追加</span></p>
     </div>
+
+    <nav aria-label="パンくずリスト" class="border-bottom border-primary">
+        <ol class="breadcrumb mb-1">
+            <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+            <li class="breadcrumb-item"><a href="#">ライブラリ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">データ</li>
+        </ol>
+    </nav>
 
     <form class="border-bottom border-primary">
         <div class="form-group">
@@ -413,8 +433,7 @@
             <div class="form-group row">
                 <label for="exampleInputEmail1" class="col-2">プロフィール画像</label>
                 <div class="col-4">
-                    <input id="profile_image" name="name_profile_image" type="file"
-                           data-src-target="profile_image_src">
+                    <input id="profile_image" name="name_profile_image" type="file" data-src-target="profile_image_src">
                     <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
                 </div>
                 <div class="col-4 text-center">
@@ -424,10 +443,7 @@
         </form>
     </div>
 
-</section>
-
 </main><!-- /.container -->
-</body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -444,4 +460,5 @@
 <script src="./js/clipboard.min.js"></script>
 <script src="./js/bs-custom-file-input.min.js"></script>
 <script src="./js/script.js"></script>
+</body>
 </html>
