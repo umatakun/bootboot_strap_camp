@@ -21,9 +21,4 @@ $(function () {
         }
 
     });
-    $('.btnSearch').on('click', function () {
-        $('.sidebar').toggleClass('active');
-        $('.header_sidebar').toggleClass('active');
-        $('.main').toggleClass('active');
-    });
 });
